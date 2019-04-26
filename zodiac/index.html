@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>星座を調べてみよう</title>
+    <link rel="stylesheet" href="../myproject/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="zodiac.js"></script>
+</head>
+<body>
+    <div class ="container">
+    <header>
+        <h1>キミの星座は何座かな？</h1>
+    </header>
+   </div>
+
+    <hr>
+
+    
+    <div class ="container">
+    <main>
+       
+          <h2></h2>
+           <form id = "form1" name = "form1" method ="POST" action ="">
+               
+               <fieldset>
+                   <legend>誕生日から簡単に星座を調べられるツールです。</legend>
+                   <div class ="month">
+                    <label for="month">誕生月 <span class="badge badge-danger">必須</span></label>
+                   <select id="month" name="month"   required>
+                      <option value="">選択してください</option>
+                    <option value="1">1月</option>
+                    <option value="2">2月</option>
+                    <option value="3">3月</option>
+                    <option value="4">4月</option>
+                    <option value="5">5月</option>
+                    <option value="6">6月</option>
+                    <option value="7">7月</option>
+                    <option value="8">8月</option>
+                    <option value="9">9月</option>
+                    <option value="10">10月</option>
+                    <option value="11">11月</option>
+                    <option value="12">12月</option>
+                    </select>　
+                    </div>
+                    <div class="day">
+                    <label for="month">誕生日 <span class="badge badge-danger">必須</span></label>
+                    <select id="day" name="day" required>
+                        <option value="">選択してください</option>
+                        <option value="1">1日</option>
+                        <option value="2">2日</option>
+                        <option value="3">3日</option>
+                        <option value="4">4日</option>
+                        <option value="5">5日</option>
+                        <option value="6">6日</option>
+                        <option value="7">7日</option>
+                        <option value="8">8日</option>
+                        <option value="9">9日</option>
+                        <option value="10">10日</option>
+                        <option value="11">11日</option>
+                        <option value="12">12日</option>
+                        <option value="13">13日</option>
+                        <option value="14">14日</option>
+                        <option value="15">15日</option>
+                        <option value="16">16日</option>
+                        <option value="17">17日</option>
+                        <option value="18">18日</option>
+                        <option value="19">19日</option>
+                        <option value="20">20日</option>
+                        <option value="21">21日</option>
+                        <option value="22">22日</option>
+                        <option value="23">23日</option>
+                        <option value="24">24日</option>
+                        <option value="25">25日</option>
+                        <option value="26">26日</option>
+                        <option value="27">27日</option>
+                        <option value="28">28日</option>
+                        <option value="29">29日</option>
+                        <option value="30">30日</option>
+                        <option value="31">31日</option>
+                    </select>　
+                    </div>                        
+                    <input type="submit" value="調べる" class="botton" onclick="clickBtn()">
+
+               </fieldset>
+           </form>
+        </div>
+           
+           <hr>
+     <div class ="container">
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+    </div>
+    <script src="../myproject/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../myproject/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../myproject/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

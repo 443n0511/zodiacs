@@ -1,0 +1,56 @@
+header{
+    margin-top:30px;
+    color:rgb(3, 65, 75);
+}
+
+hr{
+    border-width: 3px;
+    border-color: #F48498;
+    margin:30px 0;   
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+legend {
+    font-size: 18px;
+    color:#545454;
+    margin: 0;
+
+}
+.botton{
+        margin-top: 10Px;
+        display: inline-block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background: #F48498;
+        color: #FFF;
+        border-bottom: solid 4px #9e698c;
+        border-radius: 3px;
+      }
+      .botton:active {
+    
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+      }
+
+}
+
+body{
+    background-color: #AFD2E9;
+
+}
+.month{
+    margin-top: 10Px;
+    color: #545454;
+}
+.day{
+    margin-top: 10Px;
+    color: #545454;
+
+}
