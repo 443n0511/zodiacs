@@ -45,8 +45,12 @@ body{
     background-color: #AFD2E9;
 
 }
-.month{
+.yaer{
     margin-top: 10Px;
+    color: #545454;
+
+}
+.month{
     color: #545454;
 }
 .day{
