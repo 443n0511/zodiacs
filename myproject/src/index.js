@@ -11,13 +11,13 @@ function onClickButton() {
     let m = document.getElementById("month").value;
     let d = document.getElementById("day").value;
 
+//取得して来たセレクトボックスの数値をHTMLに表示
     document.querySelector('#log').innerHTML = 'あなたの生年月日は'+ y + '年'+ m + '月' + d + '日です。';
-
-    
 
 
     //月は「０」を起点とするので−１をする
-    const date = new Date(y, m - 1, d).toISOString();
-    
+    //toLocaleDateString()でyyyy/mm/ddの表示をさせる
+    const date = new Date(y, m - 1, d).toLocaleDateString()
     console.log(date);
 };
+
