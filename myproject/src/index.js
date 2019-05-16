@@ -21,7 +21,8 @@ function onClickButton() {
     
     //月は「０」を起点とするので−１をする
     //toLocaleDateString()でyyyy/mm/ddの表示をさせる
-    const days = new Date(y, m - 1, d).toLocaleDateString();
+    let days = new Date(y, m - 1, d);
+    console.log (days);
     
     if (days) {
         // 星座を取得
@@ -37,7 +38,7 @@ function onClickButton() {
 
         
         function getDate(y, m, d) {
-          if ((date.getFullYear() != y)|| (date.getMonth() != m - 1)|| (date.getDate() != d)) {
+          if ((days.getFullYear() != y)|| (days.getMonth() != m - 1)|| (days.getDate() != d)) {
          // 不正な日付の場合はnullを返す
          days = null;
          }
@@ -45,7 +46,7 @@ function onClickButton() {
         }
 
 
-    function getConstellation(days) {
+    function getConstellation() {
         var month = days.getMonth();
         var day = days.getDate();
         var borderDay = borderDays[month];
